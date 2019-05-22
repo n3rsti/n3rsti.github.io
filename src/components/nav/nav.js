@@ -14,7 +14,7 @@ const StyledNav = styled.nav`
 const StyledA = styled.a`
     text-decoration: none;
     color: ${({ theme }) => theme.colors.black};
-    padding: 10%;
+    padding: 10px 10% 10px 10%;
 `
 const StyledIcon = styled.i`
     font-size: 2.5rem;
