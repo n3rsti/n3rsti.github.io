@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { ArrowAnimation } from "../animations/animations"
 
 const StyledArrow = styled.div`
     position: absolute;
@@ -8,6 +9,7 @@ const StyledArrow = styled.div`
     transform: translateX(-50%);
     font-size: 1rem;
     text-align: center;
+    animation: ${ArrowAnimation} 1.5s infinite;
 `
 const StyledArrowIcon = styled.i`
     color: ${({ theme }) => theme.colors.white};
