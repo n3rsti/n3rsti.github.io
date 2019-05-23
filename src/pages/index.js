@@ -5,7 +5,7 @@ import StyledSection from "../components/section/section"
 import Title from "../components/styled-title/styled-title"
 import Nav from "../components/nav/nav"
 import { StyledArrow, StyledArrowIcon, StyledArrowText } from "../components/arrow/arrow"
-
+import StyledIcon from "../components/bigIcon/bigIcon"
 const IndexPage = () => (
   <Layout>
     <StyledSection>
@@ -19,6 +19,7 @@ const IndexPage = () => (
       <Nav></Nav>
     </StyledSection>
     <StyledSection black id="about-me">
+    <StyledIcon className="fas fa-user"></StyledIcon>
     <StyledArrow>
         <StyledArrowText yellow>Skills</StyledArrowText>
         <StyledArrowIcon yellow className="fas fa-arrow-down"></StyledArrowIcon>

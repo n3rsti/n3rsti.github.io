@@ -6,5 +6,8 @@ const StyledSection = styled.section`
     background: ${props => props.black ? props.theme.colors.black : props.theme.colors.yellow };
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 export default StyledSection

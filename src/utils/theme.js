@@ -9,6 +9,10 @@ export const theme = {
         medium: '500',
         bold: '600',
         black: '700'
+    },
+    iconSizes: {
+        normal: '5rem',
+        big: '6rem',
     }
 }
 export default theme;
