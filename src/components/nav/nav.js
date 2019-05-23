@@ -10,6 +10,7 @@ const StyledNav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10;
 `
 const StyledA = styled.a`
     text-decoration: none;
@@ -22,7 +23,7 @@ const StyledIcon = styled.i`
 
 const Nav = () => (
     <StyledNav>
-        <StyledA>
+        <StyledA href="#about-me">
             <StyledIcon className="fas fa-user"></StyledIcon>
         </StyledA>
         <StyledA>

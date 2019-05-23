@@ -1,8 +1,7 @@
-import React from "react"
 import styled from "styled-components"
 import { ArrowAnimation } from "../animations/animations"
 
-const StyledArrow = styled.div`
+const StyledArrow = styled.a`
     position: absolute;
     bottom: 20%;
     left: 50%;
@@ -10,21 +9,16 @@ const StyledArrow = styled.div`
     font-size: 1rem;
     text-align: center;
     animation: ${ArrowAnimation} 1.5s infinite;
+    text-decoration: none;
 `
 const StyledArrowIcon = styled.i`
-    color: ${({ theme }) => theme.colors.white};
+    color: ${props => props.yellow ? props.theme.colors.yellow : props.theme.colors.white};
     font-size: 3.5rem;
 `
 const StyledArrowText = styled.p`
-    color: ${({ theme }) => theme.colors.black};
+    color: ${ props => props.yellow ? props.theme.colors.yellow : props.theme.colors.black };
     text-transform: uppercase;
     margin-bottom: 5px;
     font-weight: ${({ theme }) => theme.weights.bold};
 `
-const Arrow = () => (
-    <StyledArrow>
-        <StyledArrowText>About me</StyledArrowText>
-        <StyledArrowIcon className="fas fa-arrow-down"></StyledArrowIcon>
-    </StyledArrow>
-)
-export default Arrow;
+export { StyledArrow, StyledArrowIcon, StyledArrowText }

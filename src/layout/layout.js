@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
   }
   html {
       font-size: 10px;
+      scroll-behavior: smooth;
   }
 `
 const Layout = ({children}) => (
