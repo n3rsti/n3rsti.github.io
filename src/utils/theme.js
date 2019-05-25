@@ -13,6 +13,6 @@ export const theme = {
     iconSizes: {
         normal: '5rem',
         big: '6rem',
-    }
+    },
 }
 export default theme;
