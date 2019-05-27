@@ -8,6 +8,7 @@ import { StyledArrow, StyledArrowIcon, StyledArrowText } from "../components/arr
 import StyledIcon from "../components/bigIcon/bigIcon"
 import StyledAbout from "../components/about-me/about-me"
 import { Skills, StyledSkillTitle } from "../components/skills/skills"
+import StyledFirstWork from "../components/work/work"
 
 let date = new Date()
 let time = date.getFullYear() - 2018
@@ -43,6 +44,9 @@ const IndexPage = () => (
       <StyledSkillTitle>Gatsby</StyledSkillTitle>
       <StyledSkillTitle marginBot>Styled Components</StyledSkillTitle>
       
+    </StyledSection>
+    <StyledSection black>
+      <StyledFirstWork></StyledFirstWork>
     </StyledSection>
   </Layout>
   
