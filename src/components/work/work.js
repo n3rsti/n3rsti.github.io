@@ -1,5 +1,7 @@
 import styled from "styled-components"
 import React from "react"
+import macos from "../../img/macos.png"
+import calc from "../../img/calc.png"
 
 const StyledWork = styled.div`
     width: 220px;
@@ -15,6 +17,13 @@ const StyledWork = styled.div`
     margin: 20px;
     cursor: pointer;
     flex-wrap: wrap;
+
+    :hover .work-items {
+        transform: scale(1);
+    }
+    :hover .work-title {
+        transform: scale(0);
+    }
 `
 const StyledWorkTitle = styled.h3`
     text-transform: uppercase;
@@ -28,7 +37,7 @@ const StyledWorkTitle = styled.h3`
     margin: 0;
     font-size: 1.7rem;
     transition: .3s;
-    color: #231f20;
+    color: ${ props => props.yellow ? props.theme.colors.yellow : props.theme.colors.black};
     font-weight: 900;
     z-index: 2;
 `
@@ -40,7 +49,7 @@ const StyledInWork = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    /* transform: scale(0); */
+    transform: scale(0);
     transition: .3s;
     border-radius: 3px;
     will-change: transform;
@@ -49,22 +58,59 @@ const StyledInWork = styled.div`
     overflow: hidden;
 `
 const StyledWorkA = styled.a`
-    color: #231f20;
+    color: ${({ theme }) => theme.colors.black};
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.3rem;
     padding: 50%;
 `
-const StyledFirstWork = () => (
-    <StyledWork>
-        <StyledWorkTitle>Kalkulator Ocen</StyledWorkTitle>
-        <StyledInWork>
-            <StyledWorkA>Live</StyledWorkA>
+const BottomStyle = {
+    margin: 'auto auto 25% auto'
+  };
+const StyledFirstWork = styled(StyledWork)`
+    background: url(${macos}) no-repeat center;
+    background-size: cover;
+`
+const StyledSecWork = styled(StyledWork)`
+    background: url(${calc}) no-repeat center;
+    background-size: cover;
+`
+const StyledThirdWork = styled(StyledWork)`
+    background: ${({ theme }) => theme.colors.black};
+`
+const FirstWork = () => (
+    <StyledFirstWork>
+        <StyledWorkTitle className="work-title">MacOS</StyledWorkTitle>
+        <StyledInWork className="work-items">
+            <StyledWorkA >Live</StyledWorkA>
         </StyledInWork>
-        <StyledInWork>
+        <StyledInWork className="work-items">
             <StyledWorkA>Code</StyledWorkA>
         </StyledInWork>
-    </StyledWork>
+    </StyledFirstWork>
 )
-export default StyledFirstWork;
+const SecWork = () => (
+    <StyledSecWork>
+        <StyledWorkTitle className="work-title">Kalkulator Ocen</StyledWorkTitle>
+        <StyledInWork className="work-items">
+            <StyledWorkA >Live</StyledWorkA>
+        </StyledInWork>
+        <StyledInWork className="work-items">
+            <StyledWorkA>Code</StyledWorkA>
+        </StyledInWork>
+    </StyledSecWork>
+)
+const ThirdWork = () => (
+    <StyledThirdWork style={BottomStyle}>
+        <StyledWorkTitle className="work-title" yellow>time.js</StyledWorkTitle>
+        <StyledInWork className="work-items">
+            <StyledWorkA >Live</StyledWorkA>
+        </StyledInWork>
+        <StyledInWork className="work-items">
+            <StyledWorkA>Code</StyledWorkA>
+        </StyledInWork>
+    </StyledThirdWork>
+)
+
+export {FirstWork, SecWork, ThirdWork};
