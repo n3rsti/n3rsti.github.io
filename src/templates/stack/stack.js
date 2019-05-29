@@ -1,36 +1,12 @@
-import styled from "styled-components"
 import React from "react"
+import {StyledSection} from "../../components/section/section"
+import StyledSectionTitle from "../../components/section-title/section-title"
+import { StyledSkills, StyledSkillsDiv, StyledSkillTitle, StyledSkillIcon } from "./stack.style"
 
-const StyledSkills = styled.div`
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10vh;
-    margin-bottom: 15vh;
-`
-const StyledSkillsDiv = styled.div`
-    text-align: center;
-    color: ${({ theme }) => theme.colors.black};
-    display: flex;
-    flex-direction: column;
-    width: 80px;
-    height: 80px;
-    margin: 5px 20px 5px 20px;
-`
-const StyledSkillTitle = styled.h3`
-    color: ${({ theme }) => theme.colors.black};
-    margin-top: 3px;
-    font-size: 1.4rem;
-    margin-bottom: ${props => props.marginBot ? '15vh' : '0'};
-`
-const StyledSkillIcon = styled.i`
-    font-size: 5rem;
-`
-
-const Skills = () => (
-    <StyledSkills>
+const Stack = () => (
+    <StyledSection auto id="stack">
+      <StyledSectionTitle>Skills</StyledSectionTitle>
+      <StyledSkills>
         <StyledSkillsDiv>
             <StyledSkillIcon className="fab fa-html5"></StyledSkillIcon>
             <StyledSkillTitle>HTML</StyledSkillTitle>
@@ -52,5 +28,11 @@ const Skills = () => (
             <StyledSkillTitle>Git + GitHub</StyledSkillTitle>
         </StyledSkillsDiv>
     </StyledSkills>
+      <StyledSectionTitle marginBot>Other Skills</StyledSectionTitle>
+      <StyledSkillTitle>Jira / Asana</StyledSkillTitle>
+      <StyledSkillTitle>Gatsby</StyledSkillTitle>
+      <StyledSkillTitle marginBot>Styled Components</StyledSkillTitle>
+      
+    </StyledSection>
 )
-export { Skills, StyledSkillTitle };
+export default Stack

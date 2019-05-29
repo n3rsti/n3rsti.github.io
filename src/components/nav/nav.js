@@ -30,7 +30,7 @@ const Nav = () => (
         <StyledA href="#work">
             <StyledIcon className="fas fa-briefcase"></StyledIcon>
         </StyledA>
-        <StyledA>
+        <StyledA href="#contact">
             <StyledIcon className="fas fa-phone"></StyledIcon>
         </StyledA>
     </StyledNav>

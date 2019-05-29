@@ -1,6 +1,4 @@
 import styled from "styled-components"
-import React from "react"
-
 
 const StyledH1 = styled.h1`
     position: absolute;
@@ -18,13 +16,4 @@ const TitleP = styled.p`
     color: ${({ theme }) => theme.colors.black};
     display: inline;
 `
-const Title = () => (
-    <StyledH1>
-        
-            <TitleP>K</TitleP>rzysztof
-            <br></br>
-            <TitleP>W</TitleP>itucki
-        
-    </StyledH1>
-)
-export default Title;
+export { StyledH1, TitleP }

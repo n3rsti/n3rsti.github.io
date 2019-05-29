@@ -1,5 +1,14 @@
 import styled from "styled-components"
-import { ArrowAnimation } from "../animations/animations"
+import { keyframes } from 'styled-components';
+ 
+const ArrowAnimation = keyframes`
+  0% {
+    transform: translate(-50%, 0)
+  }
+  50% {
+    transform: translate(-50%, 30px)
+  }
+`
 
 const StyledArrow = styled.a`
     position: absolute;
