@@ -16,6 +16,7 @@ const StyledA = styled.a`
     text-decoration: none;
     color: ${({ theme }) => theme.colors.black};
     padding: 10px 10% 10px 10%;
+    -webkit-tap-highlight-color: transparent;
 `
 const StyledIcon = styled.i`
     font-size: 2.5rem;
@@ -26,7 +27,7 @@ const Nav = () => (
         <StyledA href="#about-me">
             <StyledIcon className="fas fa-user"></StyledIcon>
         </StyledA>
-        <StyledA>
+        <StyledA href="#work">
             <StyledIcon className="fas fa-briefcase"></StyledIcon>
         </StyledA>
         <StyledA>

@@ -45,7 +45,7 @@ const IndexPage = () => (
       <StyledSkillTitle marginBot>Styled Components</StyledSkillTitle>
       
     </StyledSection>
-    <StyledSection black auto>
+    <StyledSection black auto id="work">
       <FirstWork></FirstWork>
       <SecWork></SecWork>
       <ThirdWork></ThirdWork>
