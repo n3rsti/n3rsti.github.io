@@ -6,6 +6,11 @@ const StyledAbout = styled.p`
     text-align: center;
     margin-top: 20vh;
     color: ${({ theme }) => theme.colors.yellow};
+
+    a {
+        color: ${({ theme }) => theme.colors.yellow};
+        font-weight: 600;
+    }
 `
 const StyledIcon = styled.i`
     margin-top: 20%;

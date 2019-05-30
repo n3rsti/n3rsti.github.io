@@ -6,7 +6,7 @@ const Contact = () => (
     <StyledSection id="contact">
         <StyledSectionTitle marginBot>Contact</StyledSectionTitle>
         <StyledInput placeholder="Name" type="text"></StyledInput>
-        <StyledInput placeholder="E-mail" type="text"></StyledInput>
+        <StyledInput placeholder="E-Mail" type="email"></StyledInput>
         <StyledTextArea placeholder="Message" rows="5"></StyledTextArea>
         <StyledButton>Send</StyledButton>
     </StyledSection>
