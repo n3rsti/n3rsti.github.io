@@ -19,15 +19,23 @@ const StyledArrow = styled.a`
     text-align: center;
     animation: ${ArrowAnimation} 1.5s infinite;
     text-decoration: none;
+
+    @media(max-width: 1000px) and (orientation: landscape){
+      display: none;
+    }
 `
 const StyledArrowIcon = styled.i`
     color: ${props => props.yellow ? props.theme.colors.yellow : props.theme.colors.white};
     font-size: 3.5rem;
+
+
 `
 const StyledArrowText = styled.p`
     color: ${ props => props.yellow ? props.theme.colors.yellow : props.theme.colors.black };
     text-transform: uppercase;
     margin-bottom: 5px;
     font-weight: ${({ theme }) => theme.weights.bold};
+
+
 `
 export { StyledArrow, StyledArrowIcon, StyledArrowText }

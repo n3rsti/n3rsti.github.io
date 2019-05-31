@@ -41,7 +41,7 @@ const StyledButton = styled.button`
   font-size: 1.3rem;
   text-decoration: none;
   font-weight: 500;
-  margin: 30px 0 0 0;
+  margin: 30px 0 15% 0;
   width: 80px;
   height: 40px;
   border-radius: 5px;

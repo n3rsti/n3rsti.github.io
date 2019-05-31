@@ -11,6 +11,10 @@ const StyledNav = styled.nav`
     align-items: center;
     justify-content: center;
     z-index: 10;
+
+    @media(orientation: landscape) and (max-width: 1000px){
+        height: 15%;
+    }
 `
 const StyledA = styled.a`
     text-decoration: none;

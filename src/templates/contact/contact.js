@@ -3,7 +3,7 @@ import {StyledSection} from "../../components/section/section"
 import { StyledInput, StyledTextArea, StyledButton } from "./contact.style"
 import StyledSectionTitle from "../../components/section-title/section-title"
 const Contact = () => (
-    <StyledSection id="contact">
+    <StyledSection id="contact" auto>
         <StyledSectionTitle marginBot>Contact</StyledSectionTitle>
         <StyledInput placeholder="Name" type="text"></StyledInput>
         <StyledInput placeholder="E-Mail" type="email"></StyledInput>
