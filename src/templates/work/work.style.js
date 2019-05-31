@@ -9,6 +9,8 @@ const StyledWork = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-self: center;
+    align-self: center;
     border: 2px solid #f1c40f;
     position: relative;
     background-size: cover;
@@ -65,9 +67,6 @@ const StyledWorkA = styled.a`
     font-size: 1.3rem;
     padding: 50%;
 `
-const BottomStyle = {
-    margin: 'auto auto 25% auto'
-  };
 const StyledFirstWork = styled(StyledWork)`
     background: url(${macos}) no-repeat center;
     background-size: cover;
@@ -79,4 +78,4 @@ const StyledSecWork = styled(StyledWork)`
 const StyledThirdWork = styled(StyledWork)`
     background: ${({ theme }) => theme.colors.black};
 `
-export { StyledWork, StyledWorkTitle, StyledInWork, StyledWorkA, BottomStyle, StyledFirstWork, StyledSecWork, StyledThirdWork }
+export { StyledWork, StyledWorkTitle, StyledInWork, StyledWorkA, StyledFirstWork, StyledSecWork, StyledThirdWork }

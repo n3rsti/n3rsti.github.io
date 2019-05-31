@@ -7,6 +7,10 @@ const StyledAbout = styled.p`
     margin-top: 20vh;
     color: ${({ theme }) => theme.colors.yellow};
 
+    @media(min-width: 500px) and (orientation: portrait){
+        font-size: 1.6rem;
+    }
+
     a {
         color: ${({ theme }) => theme.colors.yellow};
         font-weight: 600;

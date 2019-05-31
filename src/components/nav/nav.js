@@ -24,6 +24,10 @@ const StyledA = styled.a`
 `
 const StyledIcon = styled.i`
     font-size: 2.5rem;
+
+    @media(min-width: 600px) and (orientation: portrait){
+        font-size: 3rem;
+    }
 `
 
 const Nav = () => (

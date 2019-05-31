@@ -23,10 +23,17 @@ const StyledArrow = styled.a`
     @media(max-width: 1000px) and (orientation: landscape){
       display: none;
     }
+    @media(min-width: 600px) and (orientation: portrait){
+        font-size: 1.1rem;
+    }
 `
 const StyledArrowIcon = styled.i`
     color: ${props => props.yellow ? props.theme.colors.yellow : props.theme.colors.white};
     font-size: 3.5rem;
+
+    @media(min-width: 600px) and (orientation: portrait){
+        font-size: 4rem;
+    }
 
 
 `

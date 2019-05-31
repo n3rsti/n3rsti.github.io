@@ -6,7 +6,7 @@ const StyledSection = styled.section`
     background: ${props => props.black ? props.theme.colors.black : props.theme.colors.yellow };
     width: 100vw;
     height: ${props => props.auto ? 'auto' : '100vh'};
-    min-height: ${props => props.auto ?  '100vh' : 'auto'};
+    min-height: ${props => props.min ?  '100vh' : 'auto'};
     display: flex;
     flex-direction: column;
     align-items: center;

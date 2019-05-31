@@ -1,6 +1,6 @@
 import React from "react"
 import {StyledSection} from "../../components/section/section"
-import { StyledWorkTitle, StyledInWork, StyledWorkA, BottomStyle, StyledFirstWork, StyledSecWork, StyledThirdWork } from "./work.style"
+import { StyledWorkTitle, StyledInWork, StyledWorkA, StyledFirstWork, StyledSecWork, StyledThirdWork } from "./work.style"
 const FirstWork = () => (
     <StyledFirstWork>
         <StyledWorkTitle className="work-title">MacOS</StyledWorkTitle>
@@ -24,7 +24,7 @@ const SecWork = () => (
     </StyledSecWork>
 )
 const ThirdWork = () => (
-    <StyledThirdWork style={BottomStyle}>
+    <StyledThirdWork>
         <StyledWorkTitle className="work-title" yellow>time.js</StyledWorkTitle>
         <StyledInWork className="work-items">
             <StyledWorkA href="https://www.npmjs.com/package/time-pack.js">Live</StyledWorkA>
@@ -34,7 +34,6 @@ const ThirdWork = () => (
         </StyledInWork>
     </StyledThirdWork>
 )
-
 const Work = () => (
     <StyledSection black auto id="work">
       <FirstWork></FirstWork>
