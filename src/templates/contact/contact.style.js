@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 const StyledContact = styled.div`
     width: 70%;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
 `
