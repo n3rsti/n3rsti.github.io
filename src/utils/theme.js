@@ -2,7 +2,8 @@ export const theme = {
     colors: {
         white: '#FFFFFF',
         black: '#231f20',
-        yellow: '#f1c40f'
+        yellow: '#f1c40f',
+        media: "#e0b30e"
     },
     weights: {
         regular: '400',

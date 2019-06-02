@@ -27,11 +27,18 @@ const StyledA = styled.a`
     text-decoration: none;
     color: ${({ theme }) => theme.colors.black};
     padding: 10px 10% 10px 10%;
+    padding: ${ props => props.github ? '10px' : '10px 10% 10px 10%'};
     -webkit-tap-highlight-color: transparent;
+
+    display: ${ props => props.github ? 'none' : 'block'};
+
 
     @media(min-width: 1000px){
         color: ${({ theme }) => theme.colors.yellow};
         margin: 30px;
+        margin: ${ props => props.github ? '5px' : '30px'};
+
+        display: block;
     }
 
 `
@@ -53,19 +60,55 @@ const StyledHeroImg = styled.img`
         display: block;
     }
 `
+const StyledMedia = styled.div`
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
 
+    @media(min-width: 1000px){
+        display: flex;
+    }
+`
+const StyledMediaIcon = styled.i`
+    display: none;
+    font-size: 2rem;
+    color: ${({ theme }) => theme.colors.media};
+
+    ::before {
+        display: none;
+    }
+
+    @media(min-width: 1000px){
+        display: block;
+
+        ::before {
+            display: block;
+        }
+    }
+`
 const Nav = () => (
     <StyledNav>
         <StyledHeroImg src={logo}></StyledHeroImg>
-        <StyledA href="#about-me">
+        <StyledA href="#about-me" aria-label="Check informations about me">
             <StyledIcon className="fas fa-user"></StyledIcon>
         </StyledA>
-        <StyledA href="#work">
+        <StyledA href="#work" aria-label="Look at my projects">
             <StyledIcon className="fas fa-briefcase"></StyledIcon>
         </StyledA>
-        <StyledA href="#contact">
+        <StyledA href="#contact" aria-label="Send message in contact section">
             <StyledIcon className="fas fa-phone"></StyledIcon>
-        </StyledA>  
+        </StyledA>
+        <StyledMedia>
+            <StyledA github href="https://github.com/n3rsti" aria-label="Check out my github profile">
+                <StyledMediaIcon className="fab fa-github"></StyledMediaIcon>
+            </StyledA>
+            <StyledA github href="https://www.npmjs.com/~n3rsti" aria-label="Check out my npm profile">
+                <StyledMediaIcon className="fab fa-npm"></StyledMediaIcon>
+            </StyledA>
+        </StyledMedia>
     </StyledNav>
 )
 export default Nav;

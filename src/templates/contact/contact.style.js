@@ -1,7 +1,12 @@
 import styled from "styled-components"
 
-const StyledInput = styled.input`
+const StyledContact = styled.div`
     width: 70%;
+    display: flex;
+    flex-direction: column;
+`
+const StyledInput = styled.input`
+    width: 100%;
     max-width: 700px;
     background: ${({ theme }) => theme.colors.white};
     height: 30px;
@@ -21,7 +26,7 @@ const StyledInput = styled.input`
 `
 const StyledTextArea = styled.textarea`
     max-width: 700px;
-    width: 70%;
+    width: 100%;
     background: ${({ theme }) => theme.colors.white};
     border: 0;
     border-bottom: 3px solid ${({ theme }) => theme.colors.black};
@@ -51,6 +56,7 @@ const StyledButton = styled.button`
   outline: none;
   transition: .3s;
   cursor: pointer;
+  align-self: center;
   
   :hover {
       transform: scale(1.1);
@@ -61,4 +67,12 @@ const StyledButton = styled.button`
       height: 50px;
   }
 `
-export { StyledInput, StyledTextArea, StyledButton }
+const StyledLabel = styled.label`
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 600;
+    align-self: flex-start;
+    margin-bottom: 5px;
+
+`
+export { StyledInput, StyledTextArea, StyledButton, StyledLabel, StyledContact }

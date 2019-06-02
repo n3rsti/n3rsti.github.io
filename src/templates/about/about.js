@@ -11,9 +11,9 @@ const About = () => (
     <StyledIcon className="fas fa-user"></StyledIcon>
     <StyledAbout>Hello, I'M Krzysztof Witucki and I'M learning to become <b>Javascript Developer</b>. I've been coding
       for about {time} year and this is my Portfolio with my own projects. More project you can see
-      on my <a href="https://github.com/n3rsti">Github</a>.
+      on my <a href="https://github.com/n3rsti" aria-label="Check out my github profile">Github</a>.
       </StyledAbout>
-    <StyledArrow href="#stack">
+    <StyledArrow href="#stack" aria-label="My proggraming skills section">
         <StyledArrowText yellow>Skills</StyledArrowText>
         <StyledArrowIcon yellow className="fas fa-arrow-down"></StyledArrowIcon>
       </StyledArrow>
