@@ -10,5 +10,10 @@ const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media(min-width: 1000px){
+        width: calc(100vw - 100px);
+        margin-left: 100px;
+    }
 `
 export { StyledSection }

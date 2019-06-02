@@ -26,6 +26,10 @@ const StyledWork = styled.div`
     :hover .work-title {
         transform: scale(0);
     }
+    @media(min-width: 1000px){
+        width: 300px;
+        height: 200px;
+    }
 `
 const StyledWorkTitle = styled.h3`
     text-transform: uppercase;
@@ -42,6 +46,10 @@ const StyledWorkTitle = styled.h3`
     color: ${ props => props.yellow ? props.theme.colors.yellow : props.theme.colors.black};
     font-weight: 900;
     z-index: 2;
+
+    @media(min-width: 1000px){
+        font-size: 2.2rem;
+    }
 `
 const StyledInWork = styled.div`
     width: 40%;
@@ -58,6 +66,11 @@ const StyledInWork = styled.div`
     position: relative;
     z-index: 100;
     overflow: hidden;
+
+    @media(min-width: 1000px){
+        width: 100px;
+        height: 50px;
+    }
 `
 const StyledWorkA = styled.a`
     color: ${({ theme }) => theme.colors.black};

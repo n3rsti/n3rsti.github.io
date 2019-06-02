@@ -20,7 +20,7 @@ const StyledArrow = styled.a`
     animation: ${ArrowAnimation} 1.5s infinite;
     text-decoration: none;
 
-    @media(max-width: 1000px) and (orientation: landscape){
+    @media(max-width: 900px) and (orientation: landscape){
       display: none;
     }
     @media(min-width: 600px) and (orientation: portrait){

@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 const StyledInput = styled.input`
     width: 70%;
+    max-width: 700px;
     background: ${({ theme }) => theme.colors.white};
     height: 30px;
     border: 0;
@@ -19,6 +20,7 @@ const StyledInput = styled.input`
     }
 `
 const StyledTextArea = styled.textarea`
+    max-width: 700px;
     width: 70%;
     background: ${({ theme }) => theme.colors.white};
     border: 0;
@@ -41,16 +43,22 @@ const StyledButton = styled.button`
   font-size: 1.3rem;
   text-decoration: none;
   font-weight: 500;
-  margin: 30px 0 15% 0;
+  margin: 30px 0 15vh 0;
   width: 80px;
   height: 40px;
   border-radius: 5px;
   border: 0;
   outline: none;
   transition: .3s;
+  cursor: pointer;
   
   :hover {
       transform: scale(1.1);
+  }
+
+  @media(min-width: 1000px){
+      width: 110px;
+      height: 50px;
   }
 `
 export { StyledInput, StyledTextArea, StyledButton }
