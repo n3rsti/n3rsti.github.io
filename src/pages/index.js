@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../layout/layout.js"
+import Layout from "../layout/layout"
 import Hero from "../templates/hero/hero"
 import About from "../templates/about/about"
 import Stack from "../templates/stack/stack"
