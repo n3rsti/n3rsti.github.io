@@ -14,3 +14,5 @@ My portfolio with projects and skills
 * **Gatsby**
 * **Styled Components**
 
+[Live](https://lucid-darwin-f50179.netlify.com/)
+
