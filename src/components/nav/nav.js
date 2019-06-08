@@ -92,20 +92,20 @@ const StyledMediaIcon = styled.i`
 const Nav = () => (
     <StyledNav>
         <StyledHeroImg src={logo}></StyledHeroImg>
-        <StyledA href="#about-me" aria-label="Check informations about me">
+        <StyledA href="#about-me" aria-label="Check informations about me" title="About me">
             <StyledIcon className="fas fa-user"></StyledIcon>
         </StyledA>
-        <StyledA href="#work" aria-label="Look at my projects">
+        <StyledA href="#work" aria-label="Look at my projects" title="Projects">
             <StyledIcon className="fas fa-briefcase"></StyledIcon>
         </StyledA>
-        <StyledA href="#contact" aria-label="Send message in contact section">
+        <StyledA href="#contact" aria-label="Send message in contact section" title="Contact">
             <StyledIcon className="fas fa-phone"></StyledIcon>
         </StyledA>
         <StyledMedia>
-            <StyledA github href="https://github.com/n3rsti" aria-label="Check out my github profile">
+            <StyledA github href="https://github.com/n3rsti" aria-label="Check out my github profile" title="Github profile">
                 <StyledMediaIcon className="fab fa-github"></StyledMediaIcon>
             </StyledA>
-            <StyledA github href="https://www.npmjs.com/~n3rsti" aria-label="Check out my npm profile">
+            <StyledA github href="https://www.npmjs.com/~n3rsti" aria-label="Check out my npm profile" title="Npm profile">
                 <StyledMediaIcon className="fab fa-npm"></StyledMediaIcon>
             </StyledA>
         </StyledMedia>

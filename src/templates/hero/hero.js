@@ -15,7 +15,7 @@ const Hero = () => (
         <TitleP>W</TitleP>itucki
     
     </StyledH1>
-      <StyledArrow href="#about-me" aria-label="Check informations about me">
+      <StyledArrow href="#about-me" aria-label="Check informations about me" title="About me">
         <StyledArrowText> About Me</StyledArrowText>
         <StyledArrowIcon className="fas fa-arrow-down"></StyledArrowIcon>
       </StyledArrow>

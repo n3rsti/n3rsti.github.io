@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import { keyframes } from 'styled-components';
- 
 const ArrowAnimation = keyframes`
   0% {
     transform: translate(-50%, 0)
