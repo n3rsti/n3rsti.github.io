@@ -28,8 +28,22 @@ const Stack = () => (
             <StyledSkillTitle>Git + GitHub</StyledSkillTitle>
         </StyledSkillsDiv>
     </StyledSkills>
+    <StyledSectionTitle>Learning</StyledSectionTitle>
+    <StyledSkills>
+    
+    <StyledSkillsDiv>
+            <StyledSkillIcon className="fab fa-python"></StyledSkillIcon>
+            <StyledSkillTitle>Python + Django</StyledSkillTitle>
+        </StyledSkillsDiv>
+        <StyledSkillsDiv>
+            <StyledSkillIcon className="fas fa-database"></StyledSkillIcon>
+            <StyledSkillTitle>MySQL</StyledSkillTitle>
+        </StyledSkillsDiv>
+
+    </StyledSkills>
       <StyledSectionTitle marginBot>Other Skills</StyledSectionTitle>
       <StyledSkillTitle>Jira / Asana</StyledSkillTitle>
+      <StyledSkillTitle>Linux environment</StyledSkillTitle>
       <StyledSkillTitle>Gatsby</StyledSkillTitle>
       <StyledSkillTitle marginBot>Styled Components</StyledSkillTitle>
       
