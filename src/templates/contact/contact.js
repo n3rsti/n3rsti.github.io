@@ -12,8 +12,9 @@ const Contact = () => (
             <StyledInput placeholder="E-Mail" type="email" id="email"></StyledInput>
             <StyledLabel for="message">Message:</StyledLabel>
             <StyledTextArea placeholder="Message" rows="5" id="message"></StyledTextArea>
-            <StyledButton>Send</StyledButton>
+            <StyledButton id="send">Send</StyledButton>
         </StyledContact>
     </StyledSection>
 )
+
 export default Contact;
