@@ -12,7 +12,7 @@ My portfolio with projects and skills
 
 * **Gatsby.js**
 * **Styled Components**
-* **JavaScript*"
+* **JavaScript**
 
 [Live](https://kwitucki.eu)
 
