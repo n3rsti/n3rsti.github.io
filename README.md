@@ -10,8 +10,9 @@ My portfolio with projects and skills
 
 ## 🚀 Technologies
 
-* **Gatsby**
+* **Gatsby.js**
 * **Styled Components**
+* **JavaScript*"
 
-[Live](https://lucid-darwin-f50179.netlify.com/)
+[Live](https://kwitucki.eu)
 
