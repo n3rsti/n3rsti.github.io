@@ -12,6 +12,7 @@ const SEO = () => (
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous"/>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet"></link>
+        <meta name="theme-color" content="#f1c40f"></meta>
         <title>Krzysztof Witucki</title>
     </Helmet>
 )

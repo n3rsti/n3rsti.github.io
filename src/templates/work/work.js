@@ -27,18 +27,27 @@ const ThirdWork = () => (
     <StyledThirdWork>
         <StyledWorkTitle className="work-title" yellow>time.js</StyledWorkTitle>
         <StyledInWork className="work-items">
-            <StyledWorkA href="https://www.npmjs.com/package/time-pack.js" aria-label="time-pack.js package on npm website">Live</StyledWorkA>
+            <StyledWorkA href="https://www.npmjs.com/package/time-pack.js" aria-label="time-pack.js package on npm website">NPM</StyledWorkA>
         </StyledInWork>
         <StyledInWork className="work-items">
             <StyledWorkA href="https://github.com/n3rsti/time.js" aria-label="time-pack.js code">Code</StyledWorkA>
         </StyledInWork>
     </StyledThirdWork>
 )
+const FourthWork = () => (
+    <StyledThirdWork>
+        <StyledWorkTitle className="work-title" yellow>Weather Web</StyledWorkTitle>
+        <StyledInWork className="work-items">
+            <StyledWorkA href="https://github.com/n3rsti/Weather-Web-Django" aria-label="Web weather code">Code</StyledWorkA>
+        </StyledInWork>
+    </StyledThirdWork>
+)
 const Work = () => (
-    <StyledSection black auto id="work">
+    <StyledSection black auto row center id="work">
       <FirstWork></FirstWork>
       <SecWork></SecWork>
       <ThirdWork></ThirdWork>
+      <FourthWork></FourthWork>
     </StyledSection>
 )
 export default Work

@@ -6,11 +6,11 @@ const Contact = () => (
     <StyledSection id="contact" auto>
         <StyledSectionTitle marginBot>Contact</StyledSectionTitle>
         <StyledContact>
-            <StyledLabel for="name">Name:</StyledLabel>
+            <StyledLabel htmlFor="name">Name:</StyledLabel>
             <StyledInput placeholder="Name" type="text" id="name"></StyledInput>
-            <StyledLabel for="email">E-mail:</StyledLabel>
+            <StyledLabel htmlFor="email">E-mail:</StyledLabel>
             <StyledInput placeholder="E-Mail" type="email" id="email"></StyledInput>
-            <StyledLabel for="message">Message:</StyledLabel>
+            <StyledLabel htmlFor="message">Message:</StyledLabel>
             <StyledTextArea placeholder="Message" rows="5" id="message"></StyledTextArea>
             <StyledButton id="send">Send</StyledButton>
         </StyledContact>

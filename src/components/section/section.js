@@ -8,8 +8,11 @@ const StyledSection = styled.section`
     height: ${props => props.auto ? 'auto' : '100vh'};
     min-height: ${props => props.min ?  '100vh' : 'auto'};
     display: flex;
-    flex-direction: column;
+    flex-direction: ${props => props.row ? 'row' : 'column'};
     align-items: center;
+    justify-content: ${props => props.row ? 'center' : 'auto'};
+    flex-wrap: wrap;
+    flex: 50%;
 
     @media(min-width: 1000px){
         width: calc(100vw - 100px);
