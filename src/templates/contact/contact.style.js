@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const StyledContact = styled.div`
+/* const StyledContact = styled.div`
     width: 70%;
     max-width: 700px;
     display: flex;
@@ -75,5 +75,14 @@ const StyledLabel = styled.label`
     align-self: flex-start;
     margin-bottom: 5px;
 
+` */
+const StyledContactIcon = styled.i`
+    color: ${({ theme }) => theme.colors.black};
+    font-size: 5rem;
+    margin: 0 30px 30px 30px;
+
 `
-export { StyledInput, StyledTextArea, StyledButton, StyledLabel, StyledContact }
+const StyledContactDiv = styled.div`
+    margin-bottom: 10vh;
+`
+export { StyledContactIcon, StyledContactDiv }
