@@ -91,7 +91,7 @@ const StyledMediaIcon = styled.i`
 `
 const Nav = () => (
     <StyledNav>
-        <StyledHeroImg src={logo}></StyledHeroImg>
+        <StyledHeroImg src={logo} alt="Logo"></StyledHeroImg>
         <StyledA href="#about-me" aria-label="Check informations about me" title="About me">
             <StyledIcon className="fas fa-user"></StyledIcon>
         </StyledA>

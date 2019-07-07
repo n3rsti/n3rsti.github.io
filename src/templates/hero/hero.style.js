@@ -8,7 +8,7 @@ const StyledH1 = styled.h1`
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.black};
 
     @media(min-width: 600px){
         font-size: 5rem;
