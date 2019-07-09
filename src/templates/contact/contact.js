@@ -16,8 +16,8 @@ const Contact = () => (
             <StyledButton id="send">Send</StyledButton>
         </StyledContact> */}
         <StyledContactDiv>
-            <a href="https://github.com/n3rsti" title="Github profile" aria-label="My github profile"><StyledContactIcon className="fab fa-github" ></StyledContactIcon></a>
-            <a href="https://pl.linkedin.com/in/kwitucki" title="Linkedin profile" aria-label="My linkedin profile"><StyledContactIcon className="fab fa-linkedin" ></StyledContactIcon></a>
+            <a href="https://github.com/n3rsti" target="_blank" title="Github profile" aria-label="My github profile"><StyledContactIcon className="fab fa-github" ></StyledContactIcon></a>
+            <a href="https://pl.linkedin.com/in/kwitucki" target="_blank" title="Linkedin profile" aria-label="My linkedin profile"><StyledContactIcon className="fab fa-linkedin" ></StyledContactIcon></a>
         </StyledContactDiv>
             
         

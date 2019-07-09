@@ -102,10 +102,10 @@ const Nav = () => (
             <StyledIcon className="fas fa-phone"></StyledIcon>
         </StyledA>
         <StyledMedia>
-            <StyledA github href="https://github.com/n3rsti" aria-label="Check out my github profile" title="Github profile">
+            <StyledA github href="https://github.com/n3rsti" target="_blank" aria-label="Check out my github profile" title="Github profile">
                 <StyledMediaIcon className="fab fa-github"></StyledMediaIcon>
             </StyledA>
-            <StyledA github href="https://www.npmjs.com/~n3rsti" aria-label="Check out my npm profile" title="Npm profile">
+            <StyledA github href="https://www.npmjs.com/~n3rsti" target="_blank" aria-label="Check out my npm profile" title="Npm profile">
                 <StyledMediaIcon className="fab fa-npm"></StyledMediaIcon>
             </StyledA>
         </StyledMedia>
