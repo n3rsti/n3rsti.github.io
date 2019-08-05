@@ -78,7 +78,7 @@ const StyledWorkA = styled.a`
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.3rem;
-    padding: 50%;
+    padding: 0;
 `
 const StyledFirstWork = styled(StyledWork)`
     background: url(${macos}) no-repeat center;
