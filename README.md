@@ -14,5 +14,5 @@ My portfolio with projects and skills
 * **Styled Components**
 * **JavaScript**
 
-[Live](https://kwitucki.eu)
+[Live](https://cranky-archimedes-dd5cf7.netlify.app/)
 
