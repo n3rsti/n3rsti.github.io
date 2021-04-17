@@ -1,5 +1,5 @@
 import React from "react"
-import {StyledSection} from "../../components/section/section"
+import { StyledSection } from "../../components/section/section"
 import { StyledWorkTitle, StyledInWork, StyledWorkA, StyledFirstWork, StyledSecWork, StyledThirdWork } from "./work.style"
 const FirstWork = () => (
     <StyledFirstWork>
@@ -34,20 +34,23 @@ const ThirdWork = () => (
         </StyledInWork>
     </StyledThirdWork>
 )
-const FourthWork = () => (
+const ToDoChat = () => (
     <StyledThirdWork>
-        <StyledWorkTitle className="work-title" yellow>Weather Web</StyledWorkTitle>
+        <StyledWorkTitle className="work-title" yellow>ToDoChat</StyledWorkTitle>
         <StyledInWork className="work-items">
-            <StyledWorkA href="https://github.com/n3rsti/Weather-Web-Django" target="_blank" aria-label="Web weather code">Code</StyledWorkA>
+            <StyledWorkA href="http://tdchat.net" target="_blank" aria-label="ToDoChat app">Live</StyledWorkA>
+        </StyledInWork>
+        <StyledInWork className="work-items">
+            <StyledWorkA href="https://github.com/n3rsti/ToDoChat" target="_blank" aria-label="ToDoChat code">Code</StyledWorkA>
         </StyledInWork>
     </StyledThirdWork>
 )
 const Work = () => (
     <StyledSection black auto row center id="work">
-      <FirstWork></FirstWork>
-      <SecWork></SecWork>
-      <ThirdWork></ThirdWork>
-      <FourthWork></FourthWork>
+        <ToDoChat></ToDoChat>
+        <FirstWork></FirstWork>
+        <SecWork></SecWork>
+        <ThirdWork></ThirdWork>
     </StyledSection>
 )
 export default Work
